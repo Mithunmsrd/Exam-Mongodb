@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Job Application</h1>
+        <form id="job" action="/login" method="POST">
+            <div class="mb-4">
+                <label for="ApplicationID" class="block text-gray-700">Application ID</label>
+                <input type="text" id="ApplicationID" name="ApplicationID"
+                    class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="CandidateName" class="block text-gray-700">Candidate Name</label>
+                <input type="text" id="CandidateName" name="CandidateName"
+                    class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="JobPosition" class="block text-gray-700">Job Position</label>
+                <input type="text" id="JobPosition" name="JobPosition" rows="5"
+                    class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="ApplicationDate" class="block text-gray-700">Application Date</label>
+                <input type="text" id="ApplicationDate" name="ApplicationDate"
+                    class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="Status" class="block text-gray-700">Status</label>
+                <input type="text" id="Status" name="Status" class="w-full border-2 border-gray-300 p-2 rounded mt-2"
+                    required>
+            </div>
+            <a href="view.html" type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</a>
+        </form>
+    </div>
+</body>
+
+</html>
